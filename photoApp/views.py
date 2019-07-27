@@ -23,7 +23,7 @@ def create_photo(request):
             post.title = request.POST['title']
             post.description = request.POST['description']
             post.save()
-            return redirect('http://127.0.0.1:8000/portfolio')
+            return redirect('home')
     else:
         form = PortfolioPost()
         return render(request,'new_photo.html',{'form': form})

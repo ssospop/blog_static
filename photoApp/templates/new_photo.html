@@ -1,3 +1,9 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
 <br>
 <div class="container">
 	<form method='post' action="{% url 'create_photo' %}" enctype="multipart/form-data">
@@ -14,3 +20,8 @@
 	  <input class="btn btn-dark" type="submit" value="제출하기">
   </form>
 </div>
+
+{% endblock %}
+
+</body>
+</html>
